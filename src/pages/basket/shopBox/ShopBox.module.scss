@@ -1,0 +1,78 @@
+@import "/src/styles/variables";
+
+.card {
+    backdrop-filter: blur(5px);
+    margin: 0 20px 20px 0;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color:  rgba(255, 255, 255, .5);
+    box-shadow: 0 1px 2px #00000026;
+    display: flex;
+    flex-direction: row;
+    max-width: 600px; 
+    transition: transform 0.3s ease-out;
+}
+.card:hover {
+    transform: scale(0.98);
+}
+
+.img {
+    max-height: 200px;
+    max-width: 200px; 
+    aspect-ratio: 1 / 1;
+}
+
+.infoCard {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    button  {
+        background-color: $realWhite;
+        width: 150px;
+        border-radius: 10px;
+        height: 30px;
+        border: 1px solid rgba(255, 255, 255, .5);
+    }
+}
+
+
+.cardName, .price, .btn {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    color: $realWhite;
+    text-shadow: $black 1px 0 20px;
+}
+
+.cardName {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+}
+
+.amount {
+    input {
+        border-radius: 10px;
+        text-align: center;
+    }
+}

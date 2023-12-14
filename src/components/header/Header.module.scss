@@ -1,0 +1,38 @@
+@import "src/styles/_variables.scss";
+.head {
+    position: fixed;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    right: 10px;
+    transform: translateY(80px);
+    box-shadow: 6px 6px 6px #00000026;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.navBar {
+        display: flex;
+        flex-direction: row;
+        color: $black;
+        align-items: center;
+        li {
+          margin-right: 10px;
+        }
+}
+
+.home {
+    padding-top: 13px;
+}
+
+.shopCart {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 3rem;
+        padding-top: 10px;
+    }
+}
+
+.shopCart:hover {
+    color: $black; 
+}

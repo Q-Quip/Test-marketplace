@@ -1,0 +1,7 @@
+@import "/src/styles/variables";
+
+.listBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

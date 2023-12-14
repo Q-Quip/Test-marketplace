@@ -1,0 +1,30 @@
+@import './reset';
+@import './variables';
+
+input,
+button,
+body {
+	font-family: $font;
+} 
+
+body {
+	background-color: $white;
+	color: $black;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+input {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
